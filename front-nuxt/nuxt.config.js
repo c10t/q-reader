@@ -3,6 +3,7 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'app',
 
   /*
   ** Headers of the page
@@ -50,6 +51,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'https://hacker-news.firebaseio.com/v0/'
   },
 
   /*
